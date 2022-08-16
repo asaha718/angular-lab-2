@@ -1,0 +1,10 @@
+<h1>Athletes List</h1>
+
+<ul>
+
+    <li *ngFor="let currentAthlete of athletes">
+        {{currentAthlete.name}} ({{currentAthlete.sport}})
+        <span *ngIf= "currentAthlete.active === true"> is active </span>
+        <span *ngIf= "currentAthlete.active === false"> is not active </span>
+    </li>
+</ul>
